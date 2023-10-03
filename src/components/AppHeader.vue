@@ -2,41 +2,8 @@
 
 export default {
     name: 'AppHeader',
-    data() {
-        return {
-            menuItem: [
-                {
-                    name: 'homes',
-                    url: '#',
-                    active: true
-                },
-                {
-                    name: 'pages',
-                    url: '#',
-                    active: false
-                },
-                {
-                    name: 'blog',
-                    url: '#',
-                    active: false
-                },
-                {
-                    name: 'shop',
-                    url: '#',
-                    active: false
-                },
-                {
-                    name: 'events',
-                    url: '#',
-                    active: false
-                },
-                {
-                    name: 'elements',
-                    url: '#',
-                    active: false
-                },
-            ]
-        }
+    props: {
+        menu: Object
     }
 }
 
@@ -50,7 +17,8 @@ export default {
             </div>
             <div class="nav_menu">
                 <ul>
-                    <li v-for="item in menuItem"><a href="item.url" :class="item.active ? 'active' : ''">{{ item.name }}</a>
+                    <li v-for="item in menu">
+                        <a :href="item.url" :class="item.active ? 'active' : ''">{{ item.name }}</a>
                     </li>
                     <li>
                         <a href="#"><font-awesome-icon :icon="['fas', 'magnifying-glass']" /></a>
