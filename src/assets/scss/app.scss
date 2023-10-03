@@ -2,14 +2,25 @@
 @use './partials/variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900;1000&family=Encode+Sans:wght@600&family=Roboto:wght@400;500;700&display=swap');
 
+.container_70 {
+  margin: auto;
+  width: 70%;
+}
+
+.container_90 {
+  margin: auto;
+  width: 90%;
+}
+
+
 #app_header {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  position: absolute;
+  // position: absolute;
   width: 100%;
   padding: 1rem 0;
 
-  nav {
+  .container_90 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,4 +66,144 @@
     }
   }
 
+}
+
+#app_footer {
+
+  #footer_top {
+    background-color: $el_bg_darker;
+
+    .row {
+      padding: 4rem 0;
+
+      .col-3 {
+
+        .card {
+          background-color: transparent;
+          border: none;
+          border-radius: 0;
+          padding: 0 1rem;
+          color: $el_text_grey_light;
+
+          h4.title {
+            margin-bottom: 0;
+            text-transform: capitalize;
+            color: $el_text_white;
+
+          }
+
+          .bar {
+            margin: 1rem 0;
+            border-top: 2px solid $el_border_primary;
+            width: 12%;
+          }
+
+          .info {
+            margin-bottom: 1rem;
+
+            ul {
+              padding-left: 0;
+            }
+
+            .twitter_info {
+              list-style: url('../svg/twitter-icon.svg');
+              padding-left: 1.5rem;
+
+              li {
+                margin-bottom: .5rem;
+                padding-left: 1rem;
+
+                a {
+                  color: $el_text_grey_light;
+                }
+              }
+            }
+
+            .useful_links {
+              list-style: none;
+
+              li {
+                text-transform: capitalize;
+                margin-bottom: .25rem;
+
+                a {
+                  text-decoration: none;
+                  color: $el_text_grey_light;
+
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+
+          .social {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-left: 0;
+
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: $el_text_darker;
+              background-color: $el_bg_white;
+              width: 30px;
+              aspect-ratio: 1/1;
+              border-radius: 50%;
+            }
+          }
+
+          .contacts {
+            list-style: none;
+
+            li {
+              color: $el_text_primary;
+              margin-bottom: .25rem;
+
+              span {
+                margin-left: .5rem;
+                color: $el_text_grey_light;
+              }
+            }
+
+            form {
+              display: flex;
+              justify-content: space-between;
+              border-bottom: 2px solid $el_text_white;
+              margin-top: 2rem;
+
+              input {
+                background-color: transparent;
+                border: 0;
+                padding-left: .4rem;
+                color: $el_text_white;
+              }
+
+              button {
+                background-color: transparent;
+                color: $el_text_white;
+                text-transform: uppercase;
+                border-color: transparent;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #footer_bottom {
+    text-align: center;
+    background-color: $el_bg_primary;
+    color: $el_text_white;
+
+    p {
+      padding: .3rem 0
+    }
+  }
 }
