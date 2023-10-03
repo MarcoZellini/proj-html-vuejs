@@ -4,13 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 .container_70 {
-  margin: auto;
+  margin: 0 auto;
   width: 70%;
 }
 
 .container_90 {
-  margin: auto;
+  margin: 0 auto;
   width: 90%;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
 }
 
 #app_header {
@@ -104,9 +110,11 @@
           }
 
           h1 {
-            font-size: 5rem;
+            font-size: 4.5rem;
+            font-weight: bold;
 
-            span {
+            &::after {
+              content: '.';
               color: $el_text_primary;
             }
           }
@@ -177,6 +185,42 @@
       }
     }
   }
+
+  #specialties {
+    text-align: center;
+
+
+
+    .container_90 {
+
+      margin-top: -4rem;
+      padding: 4rem 0;
+      background-color: $el_bg_white;
+      position: relative;
+      z-index: 10;
+    }
+
+    h1 {
+      font-weight: bold;
+
+      &::after {
+        content: '.';
+        color: $el_text_primary;
+      }
+    }
+
+    .col-3 {
+      padding: 0 2rem;
+
+      .card {
+        h6 {
+          font-weight: bold;
+          margin-top: 1.5rem;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
 }
 
 #app_footer {
@@ -190,9 +234,6 @@
       .col-3 {
 
         .card {
-          background-color: transparent;
-          border: none;
-          border-radius: 0;
           padding: 0 1rem;
           color: $el_text_grey_light;
 

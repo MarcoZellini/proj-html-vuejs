@@ -57,9 +57,9 @@ export default {
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-6">
-                            <div class="hero_content container_70">
-                                <h1>Our Team<span>.</span></h1>
+                        <div class="col-7">
+                            <div class="hero_content">
+                                <h1>Our Team</h1>
                                 <p>
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt exercitationem
                                     architecto
@@ -80,6 +80,51 @@ export default {
 
             </div>
 
+        </section>
+        <section id="specialties">
+            <div class="container_90">
+                <div class="container">
+                    <h1>Our specialties</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <div class="divider"></div>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card">
+                                <img class="img-fluid" src="../assets/svg/svg-0.svg" alt="">
+                                <h6>Knowing</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <!-- /.col-3 -->
+                        <div class="col-3">
+                            <div class="card">
+                                <img class="img-fluid" src="../assets/svg/svg-1.svg" alt="">
+                                <h6>Selling</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <!-- /.col-3 -->
+                        <div class="col-3">
+                            <div class="card">
+                                <img class="img-fluid" src="../assets/svg/svg-2.svg" alt="">
+                                <h6>Learning</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <!-- /.col-3 -->
+                        <div class="col-3">
+                            <div class="card">
+                                <img class="img-fluid" src="../assets/svg/svg-3.svg" alt="">
+                                <h6>Contact</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <!-- /.col-3 -->
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </template>
