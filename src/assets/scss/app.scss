@@ -121,7 +121,7 @@ body {
               padding: 1rem;
               margin-right: 1rem;
               text-decoration: none;
-              font-family: 'roboto';
+              font-family: 'roboto', sans-serif;
 
               span.text {
                 padding: .5rem;
@@ -293,6 +293,109 @@ body {
     }
 
 
+  }
+
+  #upcoming_events {
+    background-image: url('../img/h1-img-09.jpg');
+    padding: 6rem 0;
+
+    .card {
+      background-color: $el_bg_light;
+
+      h3 {
+        text-transform: capitalize;
+        font-weight: bold;
+        padding: 1rem 2rem;
+        margin: 0;
+      }
+
+      .event {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid $el_border_grey;
+        border-bottom: 1px solid $el_border_grey;
+        padding: 1.5rem 2rem;
+        box-shadow: inset $el_bg_grey 0px 0px 10px 3px;
+
+        &:hover {
+          background-color: $el_bg_white;
+        }
+
+        .event_name {
+          text-transform: capitalize;
+        }
+
+        .date {
+          text-align: center;
+          background-color: $el_bg_primary;
+          color: $el_text_white;
+          padding: .5rem;
+          margin-right: 1rem;
+
+          .day {
+            display: block;
+            font-style: 1rem;
+          }
+
+          .rest_of_date {
+            text-transform: capitalize;
+            display: block;
+            font-size: 10px;
+          }
+        }
+
+        .event_info {
+          margin-left: 1rem;
+
+          h6 {
+            font-weight: bold;
+          }
+
+          ul {
+            list-style: none;
+            margin-bottom: 0;
+            padding: 0;
+
+            li {
+              color: $el_text_primary;
+              padding-bottom: .25rem;
+
+              span {
+                color: $el_text_black;
+                margin-left: 1rem;
+                font-size: .75rem;
+              }
+
+              .more {
+                text-transform: uppercase;
+                font-weight: bold;
+                color: $el_text_black;
+                text-decoration: none;
+                font-size: .9rem;
+                font-family: 'roboto', sans-serif;
+              }
+
+              &:last-child {
+                padding: .5rem .25rem;
+                display: inline-block;
+
+                &:hover {
+                  cursor: pointer;
+                  background-color: $el_bg_white;
+                  transition: all .5s ease;
+                }
+
+                &:hover::after {
+                  content: '\2192';
+                  color: $el_text_black;
+                  padding-left: .5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 

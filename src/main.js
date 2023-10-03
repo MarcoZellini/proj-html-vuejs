@@ -17,7 +17,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
-    faEnvelope
+    faEnvelope,
+    faClock
 } from '@fortawesome/free-regular-svg-icons'
 
 import {
@@ -34,7 +35,8 @@ library.add(
     faFacebookF,
     faTwitter, faLocationDot,
     faPhone,
-    faEnvelope)
+    faEnvelope,
+    faClock)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)
