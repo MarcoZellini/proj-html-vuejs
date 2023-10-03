@@ -1,13 +1,18 @@
 <script>
+import AppHeader from './components/AppHeader.vue';
+
 export default {
+    name: 'App',
+
+    components: {
+        AppHeader
+    }
 
 }
 </script>
 
 <template>
-    <header id="app_header">
-
-    </header>
+    <AppHeader />
     <!-- /#app_header -->
 
     <main id="app_main">
