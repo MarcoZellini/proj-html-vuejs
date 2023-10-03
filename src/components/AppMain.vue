@@ -81,6 +81,7 @@ export default {
             </div>
 
         </section>
+        <!-- /#hero -->
         <section id="specialties">
             <div class="container_90">
                 <div class="container">
@@ -122,6 +123,42 @@ export default {
                             </div>
                         </div>
                         <!-- /.col-3 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /#specialties -->
+        <section id="founder">
+            <div class="container">
+                <div class="row">
+
+
+                    <img class="img-fluid" src="../assets/img/h1-img-01.jpg" alt="">
+                    <div class="founder_info">
+                        <h2 class="name">jason bickford</h2>
+                        <small class="role">Founder and Executive Director</small>
+                        <div class="divider"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate asperiores
+                            explicabo provident rerum ab?</p>
+                        <div class="social">
+                            <ul class="social">
+                                <li>
+                                    <a href="#">
+                                        <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <font-awesome-icon :icon="['fab', 'facebook-f']" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <font-awesome-icon :icon="['fab', 'twitter']" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

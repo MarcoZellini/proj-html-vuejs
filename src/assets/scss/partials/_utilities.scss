@@ -1,0 +1,23 @@
+@use './variables.scss' as *;
+
+.container_70 {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.container_90 {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.divider {
+    border-bottom: 2px solid $el_text_primary;
+    width: 50px;
+    margin: 1rem 0;
+}
