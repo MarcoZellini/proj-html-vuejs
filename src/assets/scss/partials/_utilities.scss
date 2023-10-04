@@ -44,3 +44,31 @@
         padding-left: .5rem;
     }
 }
+
+.commands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+
+    .prev {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    .prev,
+    .next {
+        font-size: 2.5rem;
+        cursor: pointer;
+
+        svg {
+            fill: $el_text_black;
+
+            path {
+                stroke-width: 100px;
+            }
+        }
+    }
+}

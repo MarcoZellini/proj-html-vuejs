@@ -81,34 +81,6 @@ body {
         object-fit: cover;
       }
 
-      .commands {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        height: 100%;
-
-        .prev {
-          svg {
-            transform: rotate(180deg);
-          }
-        }
-
-        .prev,
-        .next {
-          font-size: 2.5rem;
-          cursor: pointer;
-
-          svg {
-            fill: $el_text_black;
-
-            path {
-              stroke-width: 100px;
-            }
-          }
-        }
-      }
-
       .container {
         position: absolute;
         display: flex;
@@ -271,6 +243,9 @@ body {
 
           .commands {
             display: flex;
+            justify-content: flex-start;
+            align-items: end;
+            margin: 0;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -281,18 +256,20 @@ body {
               background-color: $el_bg_primary;
               color: $el_bg_white;
               cursor: pointer;
-              padding: .5rem .75rem 1rem 1rem;
+              padding: 0 .5rem;
 
               svg {
                 fill: $el_fill_white;
+                margin-bottom: 1rem;
               }
             }
 
             .prev {
-              padding: 1rem .75rem .5rem 1rem;
 
               svg {
+                vertical-align: revert;
                 transform: rotate(180deg);
+                margin-bottom: 0;
               }
             }
           }
@@ -581,6 +558,85 @@ body {
         }
       }
     }
+  }
+
+  #testimonials {
+    background-color: $el_bg_grey_darker;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    h1 {
+      color: $el_text_darker;
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 10rem;
+      line-height: 100%;
+      position: absolute;
+    }
+
+    .slider {
+      padding: 7rem 0;
+      color: $el_text_white;
+      position: relative;
+
+      .container {
+        display: flex;
+        justify-content: center;
+        color: $el_text_white;
+        position: relative;
+
+        .card {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: 50%;
+          text-align: center;
+          color: $el_text_grey_light;
+
+          h5 {
+            text-transform: capitalize;
+            font-weight: bold;
+            margin: 1rem 0;
+          }
+
+          .slider_menu {
+            display: flex;
+            align-items: center;
+
+            &>div {
+              margin: 0 .25rem;
+            }
+
+            .slider_bars {
+              height: 3px;
+              width: 100px;
+              background-color: $el_bg_grey;
+              position: relative;
+
+              .bar {
+                width: calc(100% / 3);
+                height: 3px;
+                background-color: $el_bg_white;
+                position: absolute;
+              }
+            }
+          }
+        }
+      }
+
+      .commands {
+        top: 0;
+        width: 100%;
+
+        svg {
+          fill: $el_fill_white;
+        }
+      }
+    }
+
+
   }
 }
 
