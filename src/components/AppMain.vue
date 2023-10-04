@@ -170,7 +170,7 @@ export default {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate asperiores
                             explicabo provident rerum ab?
                         </p>
-                        <div class="social">
+                        <div>
                             <ul class="social">
                                 <li>
                                     <a href="#">

@@ -293,6 +293,10 @@ body {
               width: 30px;
               aspect-ratio: 1/1;
               border-radius: 50%;
+
+              &:hover {
+                background-color: $el_text_black;
+              }
             }
           }
         }
