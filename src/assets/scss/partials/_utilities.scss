@@ -72,3 +72,12 @@
         }
     }
 }
+
+.dotted {
+    font-weight: bold;
+
+    &::after {
+        content: '.';
+        color: $el_text_primary;
+    }
+}
