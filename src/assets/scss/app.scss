@@ -424,6 +424,10 @@ body {
 
   #creative_leader {
     padding: 6rem 0;
+    background-image: url('../svg/svg-4.svg');
+    background-repeat: no-repeat;
+    background-position: 15% -407%;
+    background-color: $el_bg_white;
 
     .col-6 {
       padding: 0 1rem;
@@ -488,6 +492,92 @@ body {
           .w83 {
             width: 83%;
           }
+        }
+      }
+    }
+  }
+
+  #latest_news {
+    background-image: url('../svg/svg-4.svg');
+    background-repeat: no-repeat;
+    background-position: 15% -19%;
+    padding: 6rem 0;
+    text-align: center;
+    position: relative;
+
+    .commands {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      z-index: -1;
+
+      .prev {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+
+      .prev,
+      .next {
+        font-size: 2.5rem;
+        cursor: pointer;
+
+        svg {
+          fill: $el_text_black;
+
+          path {
+            stroke-width: 100px;
+          }
+        }
+      }
+    }
+
+    .container {
+      z-index: 10;
+
+      h1 {
+        font-weight: bold;
+
+        &::after {
+          content: '.';
+          color: $el_text_primary;
+        }
+      }
+
+      .divider {
+        margin: auto;
+      }
+
+      .row {
+        margin-top: 3rem;
+
+        .card {
+          text-align: left;
+
+          h4 {
+            text-transform: capitalize;
+            font-weight: bold;
+          }
+
+          small {
+            display: inline-block;
+            color: $el_text_primary;
+            margin: 2rem .5rem .5rem 0;
+
+            span {
+              color: $el_text_grey;
+              margin-left: .25rem;
+            }
+          }
+
+          p {
+            color: $el_text_grey;
+          }
+
+
         }
       }
     }
