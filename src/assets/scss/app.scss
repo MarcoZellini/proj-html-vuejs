@@ -630,7 +630,7 @@ body {
 
   #contact_us {
     padding-top: 6rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 
     .col-6:first-child {
       margin-top: 2rem;
@@ -645,8 +645,8 @@ body {
         display: inline-block;
         background-color: $el_bg_white;
         position: absolute;
-        left: 28%;
-        top: 46%;
+        left: 25%;
+        top: 50%;
         padding: .5rem;
         box-shadow: 3px 3px 5px gray;
 
@@ -732,6 +732,36 @@ body {
       }
     }
   }
+
+  #brands {
+
+    .row {
+      padding: 6rem 0;
+
+      .col {
+        .card {
+          text-align: center;
+
+          & :first-child {
+            display: inline-block;
+          }
+
+          & :last-child {
+            display: none;
+          }
+
+          &:hover :first-child {
+            display: none;
+          }
+
+          &:hover :last-child {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 #app_footer {
