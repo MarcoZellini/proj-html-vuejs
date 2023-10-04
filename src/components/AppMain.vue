@@ -166,8 +166,10 @@ export default {
                         <h2 class="name">jason bickford</h2>
                         <small class="role">Founder and Executive Director</small>
                         <div class="divider"></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate asperiores
-                            explicabo provident rerum ab?</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate asperiores
+                            explicabo provident rerum ab?
+                        </p>
                         <div class="social">
                             <ul class="social">
                                 <li>
@@ -491,5 +493,13 @@ export default {
             <!-- /.slider container_90 -->
         </div>
         <!-- /#testimonials -->
+
+        <div id="presentation">
+            <img src="../assets/img/h1-img-04.jpg" alt="">
+            <div class="play">
+                <font-awesome-icon :icon="['fas', 'play']" size="2xl" />
+            </div>
+        </div>
+        <!-- /#presentation -->
     </main>
 </template>
