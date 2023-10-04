@@ -495,7 +495,7 @@ export default {
         <!-- /#testimonials -->
 
         <div id="presentation">
-            <img src="../assets/img/h1-img-04.jpg" alt="">
+            <img class="img-fluid" src="../assets/img/h1-img-04.jpg" alt="">
             <div class="play">
                 <font-awesome-icon :icon="['fas', 'play']" size="2xl" />
             </div>
