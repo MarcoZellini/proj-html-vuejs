@@ -43,14 +43,15 @@ body {
             color: $el_text_dark;
             text-decoration: none;
             text-transform: uppercase;
+            display: flex;
+            align-items: center;
 
             &.active {
               color: $el_text_primary;
 
               &::before {
-                content: '\2192';
-                font-size: 1.5rem;
-                margin-right: .4rem;
+                content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='height:50px;' fill='%23FF4612'%3E%3Cpath d='M4 15a1 1 0 001 1h19.586l-4.292 4.292a1 1 0 001.414 1.414l6-6a.99.99 0 00.292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 00-.216-.324l-6-6a1 1 0 00-1.414 1.414L24.586 14H5a1 1 0 00-1 1z'/%3E%3C/svg%3E");
+                margin-right: .3rem;
                 line-height: 0;
               }
             }
@@ -79,80 +80,107 @@ body {
         height: 100%;
         object-fit: cover;
       }
-    }
 
+      .commands {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        height: 100%;
 
-    .container {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100%;
-
-      .row {
-
-        .hero_content {
-
-          margin-top: 7rem;
-
-          &>* {
-            margin-bottom: 0;
+        .prev {
+          svg {
+            transform: rotate(180deg);
           }
+        }
 
-          h1 {
-            font-size: 4.5rem;
-            font-weight: bold;
+        .prev,
+        .next {
+          font-size: 2.5rem;
+          cursor: pointer;
 
-            &::after {
-              content: '.';
-              color: $el_text_primary;
+          svg {
+            fill: $el_text_black;
+
+            path {
+              stroke-width: 100px;
             }
           }
+        }
+      }
 
-          p {
-            padding: 1.5rem 0 4rem 0;
-          }
+      .container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
 
-          .links {
-            a {
-              text-transform: uppercase;
-              background-color: $el_bg_white;
-              color: $el_text_grey_dark;
-              padding: 1rem;
-              margin-right: 1rem;
-              text-decoration: none;
-              font-family: 'roboto', sans-serif;
+        .row {
 
-              span.text {
-                padding: .5rem;
-                border-right: 1px solid $el_text_grey_dark;
-                transition: all 0.2s ease;
+          .hero_content {
+
+            margin-top: 7rem;
+
+            &>* {
+              margin-bottom: 0;
+            }
+
+            h1 {
+              font-size: 4.5rem;
+              font-weight: bold;
+
+              &::after {
+                content: '.';
+                color: $el_text_primary;
               }
+            }
 
-              span.arrow {
-                font-size: 1.5rem;
-                margin-left: .25rem;
-              }
+            p {
+              padding: 1.5rem 0 4rem 0;
+            }
 
-              &:nth-child(2) {
-                background-color: $el_bg_primary;
-                color: $el_text_white;
-                transition: all 0.2s ease;
+            .links {
+              a {
+                text-transform: uppercase;
+                background-color: $el_bg_white;
+                color: $el_text_grey_dark;
+                padding: 1rem;
+                margin-right: 1rem;
+                text-decoration: none;
+                font-family: 'roboto', sans-serif;
 
                 span.text {
-                  border-right: 1px solid $el_text_white;
-                }
-
-                &:hover span {
-                  border-color: $el_bg_primary;
+                  padding: .5rem;
+                  border-right: 1px solid $el_text_grey_dark;
                   transition: all 0.2s ease;
                 }
 
-              }
+                span.arrow {
+                  font-size: 1.5rem;
+                  margin-left: .25rem;
+                }
 
-              &:hover span {
-                border-color: $el_bg_white;
-                transition: all 0.2s ease;
+                &:nth-child(2) {
+                  background-color: $el_bg_primary;
+                  color: $el_text_white;
+                  transition: all 0.2s ease;
+
+                  span.text {
+                    border-right: 1px solid $el_text_white;
+                  }
+
+                  &:hover span {
+                    border-color: $el_bg_primary;
+                    transition: all 0.2s ease;
+                  }
+
+                }
+
+                &:hover span {
+                  border-color: $el_bg_white;
+                  transition: all 0.2s ease;
+                }
               }
             }
           }
@@ -161,19 +189,10 @@ body {
     }
 
 
-    .commands {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: absolute;
-      height: 100%;
 
-      .prev,
-      .next {
-        font-size: 2.5rem;
-        cursor: pointer;
-      }
-    }
+
+
+
   }
 
   #specialties {
@@ -245,8 +264,38 @@ body {
       .row {
         align-items: center;
 
-        img {
+        .slider {
           width: 55%;
+          position: relative;
+          padding: 0;
+
+          .commands {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+
+            .prev,
+            .next {
+              background-color: $el_bg_primary;
+              color: $el_bg_white;
+
+              padding: .5rem .75rem 1rem 1rem;
+
+              svg {
+                fill: $el_fill_white;
+              }
+            }
+
+            .prev {
+              padding: 1rem .75rem .5rem 1rem;
+
+              svg {
+                transform: rotate(180deg);
+              }
+            }
+          }
         }
 
         .founder_info {
