@@ -21,3 +21,25 @@
     width: 50px;
     margin: 1rem 0;
 }
+
+.more {
+    color: black;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5rem;
+    display: inline-block;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $el_bg_white;
+        transition: all .5s ease;
+    }
+
+    &:hover::after {
+        content: '\2192';
+        color: $el_text_black;
+        padding-left: .5rem;
+    }
+}

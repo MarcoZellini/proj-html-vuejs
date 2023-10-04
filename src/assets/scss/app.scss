@@ -280,7 +280,7 @@ body {
             .next {
               background-color: $el_bg_primary;
               color: $el_bg_white;
-
+              cursor: pointer;
               padding: .5rem .75rem 1rem 1rem;
 
               svg {
@@ -415,32 +415,78 @@ body {
                 font-size: .75rem;
               }
 
-              .more {
-                text-transform: uppercase;
-                font-weight: bold;
-                color: $el_text_black;
-                text-decoration: none;
-                font-size: .9rem;
-                font-family: 'roboto', sans-serif;
-              }
-
-              &:last-child {
-                padding: .5rem .25rem;
-                display: inline-block;
-
-                &:hover {
-                  cursor: pointer;
-                  background-color: $el_bg_white;
-                  transition: all .5s ease;
-                }
-
-                &:hover::after {
-                  content: '\2192';
-                  color: $el_text_black;
-                  padding-left: .5rem;
-                }
-              }
             }
+          }
+        }
+      }
+    }
+  }
+
+  #creative_leader {
+    padding: 6rem 0;
+
+    .col-6 {
+      padding: 0 1rem;
+
+      .card {
+        h2 {
+          text-transform: capitalize;
+          font-weight: bold;
+        }
+
+        .divider {
+          margin-top: 0;
+        }
+
+        .card {
+          display: block;
+        }
+
+      }
+
+      .graphic_item {
+        margin-bottom: 1rem;
+
+        .info {
+          display: flex;
+          justify-content: space-between;
+
+          h6 {
+            font-weight: bold;
+            text-transform: capitalize;
+          }
+        }
+
+        .level {
+          position: relative;
+
+          .total_bar {
+            height: 4px;
+            background-color: $el_bg_grey;
+          }
+
+          .partial_bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 4px;
+            background-color: $el_bg_primary;
+          }
+
+          .w78 {
+            width: 78%;
+          }
+
+          .w95 {
+            width: 95%;
+          }
+
+          .w65 {
+            width: 65%;
+          }
+
+          .w83 {
+            width: 83%;
           }
         }
       }
