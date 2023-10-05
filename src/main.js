@@ -14,7 +14,8 @@ import {
     faListUl,
     faLocationDot,
     faPhone,
-    faPlay
+    faPlay,
+    faTag
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -39,7 +40,8 @@ library.add(
     faEnvelope,
     faClock,
     faUser,
-    faPlay)
+    faPlay,
+    faTag)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

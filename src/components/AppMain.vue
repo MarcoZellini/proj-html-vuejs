@@ -105,7 +105,7 @@ export default {
                         <div class="col-3">
                             <div class="card">
                                 <img class="img-fluid" src="../assets/svg/svg-0.svg" alt="">
-                                <h6>Knowing</h6>
+                                <h5>Knowing</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
                             </div>
                         </div>
@@ -113,7 +113,7 @@ export default {
                         <div class="col-3">
                             <div class="card">
                                 <img class="img-fluid" src="../assets/svg/svg-1.svg" alt="">
-                                <h6>Selling</h6>
+                                <h5>Selling</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
                             </div>
                         </div>
@@ -121,7 +121,7 @@ export default {
                         <div class="col-3">
                             <div class="card">
                                 <img class="img-fluid" src="../assets/svg/svg-2.svg" alt="">
-                                <h6>Learning</h6>
+                                <h5>Learning</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
                             </div>
                         </div>
@@ -129,7 +129,7 @@ export default {
                         <div class="col-3">
                             <div class="card">
                                 <img class="img-fluid" src="../assets/svg/svg-3.svg" alt="">
-                                <h6>Contact</h6>
+                                <h5>Contact</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
                             </div>
                         </div>
@@ -189,6 +189,7 @@ export default {
                                 </li>
                             </ul>
                         </div>
+                        <img class="signature img-fluid" src="../assets/img/signature.png" alt="Signature">
                     </div>
                 </div>
             </div>
@@ -375,7 +376,14 @@ export default {
                     <div class="row slider">
                         <div class="col-4">
                             <div class="card">
-                                <img class="img-fluid" src="../assets/img/h1-blog-img-03.jpg" alt="">
+                                <div class="card-top">
+                                    <img class="img-fluid" src="../assets/img/h1-blog-img-03.jpg" alt="">
+                                    <div class="tag">
+                                        <font-awesome-icon :icon="['fas', 'tag']" />
+                                        <span>business leading</span>
+                                    </div>
+                                </div>
+
                                 <small>
                                     <font-awesome-icon :icon="['far', 'fa-clock']" />
                                     <span>May 5, 2019</span>
@@ -394,7 +402,13 @@ export default {
                         <!-- /.col-4 -->
                         <div class="col-4">
                             <div class="card">
-                                <img class="img-fluid" src="../assets/img/h1-blog-img-04.jpg" alt="">
+                                <div class="card-top">
+                                    <img class="img-fluid" src="../assets/img/h1-blog-img-04.jpg" alt="">
+                                    <div class="tag">
+                                        <font-awesome-icon :icon="['fas', 'tag']" />
+                                        <span>business leading</span>
+                                    </div>
+                                </div>
                                 <small>
                                     <font-awesome-icon :icon="['far', 'fa-clock']" />
                                     <span>May 5, 2019</span>
@@ -413,7 +427,13 @@ export default {
                         <!-- /.col-4 -->
                         <div class="col-4">
                             <div class="card">
-                                <img class="img-fluid" src="../assets/img/h1-blog-img-01.jpg" alt="">
+                                <div class="card-top">
+                                    <img class="img-fluid" src="../assets/img/h1-blog-img-01.jpg" alt="">
+                                    <div class="tag">
+                                        <font-awesome-icon :icon="['fas', 'tag']" />
+                                        <span>business leading</span>
+                                    </div>
+                                </div>
                                 <small>
                                     <font-awesome-icon :icon="['far', 'fa-clock']" />
                                     <span>May 5, 2019</span>
