@@ -66,6 +66,7 @@ body {
 
 #app_main {
   font-family: 'Libre Baskerville', serif;
+  position: relative;
 
   #hero {
 
@@ -766,6 +767,28 @@ body {
     }
   }
 
+  .back_to {
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: $el_bg_white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 3px $el_text_grey_dark;
+    margin: 0 0 1rem 1rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 2000;
+
+    svg {
+
+      transform: rotate(-90deg);
+      height: 28px;
+      fill: $el_text_primary;
+    }
+  }
 }
 
 #app_footer {
